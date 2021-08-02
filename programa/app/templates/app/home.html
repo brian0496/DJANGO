@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>home</title>
+    <link rel='stylesheet' type='text/css' href="{% static "css/home.css" %}">
+</head>
+<body>
+    <div class="body"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="publications/">Publications</a></li>
+            <li><a href="/">Exit</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="{%static "img/pngwing.com.png" %}" alt="">
+    </div>
+    <div class="header">
+        <div>Write what you think</div>
+    </div>
+    <form class="insert" method="GET" action="">
+        <a class="tit">Titulo <input type="text" name="title" value=""></a>
+        <a class="aut">Autor <input type="text" name="autor" value=""> </a>
+        <textarea type="text" placeholder="escribe" rows="4" cols="30" name="text" value=""> </textarea>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

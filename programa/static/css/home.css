@@ -1,0 +1,162 @@
+.body{
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+	background-size: cover;
+	filter: blur(5px);
+}
+
+.nav{
+    position:absolute;
+    top:20px;
+    right: 10px;
+    width: 150px;
+    height: 25px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.logo{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.header{
+	position: absolute;
+	top: 20px;
+	left:50%;
+    transform: translate(-50%);
+}
+
+.insert{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+    background-color:rgba(100,100,100,0.5);
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+}
+
+.logo img{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    filter: blur(0.5px);
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.insert a[name=title]{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.insert a[class=tit]{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.insert a[class=aut]{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
+.insert a input[name=title]{
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgba(100,100,100);
+    border: 0px;
+    padding: 0px;
+}
+
+.insert a input[name=autor]{
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgba(100,100,100);
+    border: 0px;
+    padding: 0px;    
+}
+
+
+.insert textarea{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 300px;
+    height: 140px;
+    background-color: rgba(100,100,100);
+}
+
+.insert input[type=submit]{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: 350px;
+    height: 30px;
+    background-color: rgba(50,50,50);
+    color: #fff;
+    border: 0px;
+    padding:0px;
+}
+
+.insert input[type=submit]:hover{
+    background-color: rgb(10,10,10);
+
+}

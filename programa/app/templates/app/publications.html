@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Publications</title>
+    <link rel="stylesheet" href="{% static "css/Publications.css" %}">
+</head>
+<body>
+    <div class="body"></div>
+    <div class="nav">
+        <ul>
+            <li><a href="">Publications</a></li>
+            <li><a href="/">Exit</a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="{% static "img/pngwing.com.png" %}" alt="">
+    </div>
+    <div class="header">
+        <div>My<span>Publication</span></div>
+    </div>
+    {% for tramite in lista %}
+    <table class="table">
+        <th class="title">{{tramite.titulo}}</th>
+        <td class="cuerpo">{{tramite.text}}</td>
+        <td class="autor"><a>autor:</a>{{tramite.user}}</td>
+        <td class="fecha">{{tramite.fecha}}</td>
+    </table>
+    {% endfor %}
+    <br>
+
+</body>
+</html>

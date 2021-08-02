@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>soporte</title>
+    <link rel="stylesheet" href="{% static "css/login.css" %}">
+</head>
+<body>
+    <div class="body"></div>
+    <div class="header">
+        <div>User<span>Load</span></div>
+    </div>
+    <br>
+    <form class="login" action="" method="POST">
+        {% csrf_token %}
+        {{ frmlogin }}
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>
